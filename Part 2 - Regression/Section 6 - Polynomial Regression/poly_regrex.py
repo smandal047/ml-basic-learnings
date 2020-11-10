@@ -25,8 +25,8 @@ predict_y_2 = poly_regrex.predict(poly_feat.fit_transform([[predict_X]]))
 print(predict_X, predict_y, predict_y_2)
 
 plt.scatter(X, y, color='red')
-plt.scatter(predict_X, predict_y, color='green')
-plt.scatter(predict_X, predict_y_2, color='black')
+plt.scatter(predict_X, predict_y, color='black')
+plt.scatter(predict_X, predict_y_2, color='green')
 plt.plot(X, poly_regrex.predict(poly_feat.fit_transform(X)), color='blue')
 plt.show()
 
